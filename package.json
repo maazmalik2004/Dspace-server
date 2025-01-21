@@ -35,9 +35,12 @@
     "ws": "^8.18.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node app.js"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node app.js",          
+  "dev": "nodemon app.js",   
+  "debug": "node --inspect app.js",
+  "build": "echo \"No build step required\" && exit 0"
+},
   "keywords": [],
   "author": "",
   "license": "ISC"
