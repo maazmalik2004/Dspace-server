@@ -36,7 +36,7 @@
   },
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "node --inspect=0.0.0.0:9229 app.js",
+  "start": "node --trace-gc app.js",
   "dev": "nodemon app.js",   
   "debug": "node --inspect app.js",
   "build": "echo \"No build step required\" && exit 0"
