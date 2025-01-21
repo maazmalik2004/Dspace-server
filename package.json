@@ -36,7 +36,7 @@
   },
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "node app.js",          
+  "start": "node --max-old-space-size=4096 app.js",
   "dev": "nodemon app.js",   
   "debug": "node --inspect app.js",
   "build": "echo \"No build step required\" && exit 0"
