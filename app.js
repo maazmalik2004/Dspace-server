@@ -28,3 +28,5 @@ app.use("/", routes);
         logger.error("Failed to start server",error);
     }
 })();
+
+export default app

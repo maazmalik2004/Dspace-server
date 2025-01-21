@@ -2,7 +2,7 @@
   "name": "dspace-4.0",
   "version": "1.0.0",
   "description": "",
-  "main": "DiscordServices.js",
+  "main": "app.js",
   "type": "module",
   "dependencies": {
     "archiver": "^7.0.1",
@@ -35,7 +35,8 @@
     "ws": "^8.18.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "keywords": [],
   "author": "",
