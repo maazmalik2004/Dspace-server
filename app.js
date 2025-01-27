@@ -13,6 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 app.use(cors());
 
 app.use("/", routes);
@@ -21,7 +22,7 @@ app.use("/", routes);
     try {
         const config = await getConfiguration();
         const PORT = config.port || 8000;
-        app.listen(PORT, () => {
+        app.listen(PORT,() => {
             logger.log(`Server is listening on port ${PORT}`);
         });
     } catch (error) {
